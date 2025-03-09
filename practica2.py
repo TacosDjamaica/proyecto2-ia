@@ -46,7 +46,7 @@ def winning_move(board, piece): #checamos si un movimiento es ganador
                     return True
      for r in range (ROW_COUNT -3):
           for c in range(COLUMN_COUNT -3):
-               if board[r][c] == piece and board[r+1][c+1] == piece and board[r+2][+2] == piece and board[r+3][c+3] == piece:
+               if board[r][c] == piece and board[r+1][c+1] == piece and board[r+2][c+2] == piece and board[r+3][c+3] == piece:
                     return True
      for c in range(COLUMN_COUNT - 3):
         for r in range(3, ROW_COUNT):
@@ -77,7 +77,7 @@ def cpu_player(board, piece):
                row = get_next_open_row(board,col)
                temp_board = board.copy()
                drop_piece(temp_board, row,col, piece)
-               score=minimax(temp_board,15,-float('inf'), float('inf'), False)
+               score=minimax(temp_board,8,-float('inf'), float('inf'), False)
                if score> best_score:
                     best_score=score
                     best_col =col
@@ -102,7 +102,7 @@ def minimax(board, depth, alpha,beta, maximizing_player):
                          eval1 = minimax(temp_board, depth -1, alpha,beta, False)
 
                          max_eval = max(max_eval,eval1)
-                         beta = max(alpha, eval1)
+                         alpha = max(alpha, eval1)
                          if alpha>=beta:
                               break #aqui se realiza la poda beta
           return max_eval
@@ -115,7 +115,7 @@ def minimax(board, depth, alpha,beta, maximizing_player):
                          drop_piece(temp_board, row, col,1)
                          eval1 =minimax(temp_board, depth -1, alpha, beta, True)
                          min_eval=min(min_eval,eval1)
-                         beta = min(alpha,eval1)
+                         beta = min(beta,eval1)
                          if alpha>=beta:
                                    break #aqui se realiza la poda Beta
           return min_eval
@@ -149,7 +149,7 @@ def main():
                          row = get_next_open_row(board, col)
                          drop_piece(board, row, col, 1)# tiramos una ficha del jugador
                          if winning_move(board, 1): #Checamos si gano
-                              print("jugador a ganador!")
+                              print("jugador ha ganado!")
                               game_over = True
                          turn = 1 #turno del cpu
                          draw_board(board)
