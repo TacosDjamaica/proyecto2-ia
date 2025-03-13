@@ -41,11 +41,9 @@ python connect4.py medio
 
 ## Características
 
-```markdown
 - Implements the algorithm **MiniMax** for the cpu AI.  
 - Supports different settings of difficulty.  
 - Graphical interface using **pygame**.  
-```
 
 ---
 
@@ -55,6 +53,4 @@ python connect4.py medio
 
 ## Licencia
 
-```markdown
-Este proyecto está bajo la licencia **MIT**. Puedes usarlo, modificarlo y compartirlo libremente.  
-```
+Este proyecto está bajo la licencia **MIT**. Puedes usarlo, modificarlo y compartirlo libremente.
