@@ -8,9 +8,7 @@ This is a connect 4 game that uses mini-max as the algorithm on which the cpu op
 
 ## Instalation
 
-```markdown
 to install the necessary dependencies, please run:
-```
 
 ```bash
 pip3 install pygame
