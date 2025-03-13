@@ -1,7 +1,7 @@
 # 🎮 Connect 4 Game
 
 ```markdown
-This is a connect 4 game that uses mini-max as the algorithm on wich the cp operates
+This is a connect 4 game that uses mini-max as the algorithm on which the cpu operates
 ```
 
 ---
