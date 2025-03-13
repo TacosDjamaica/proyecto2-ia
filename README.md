@@ -21,9 +21,7 @@ pip3 install numpy
 
 ## Use
 
-```markdown
 to execute the game, please run the following command:
-```
 
 ```bash
 python connect4.py <difficulty>
