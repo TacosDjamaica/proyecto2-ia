@@ -62,9 +62,8 @@ python connect4.py medio
 ---
 
 ## Capturas de Pantalla
-```markdown
+
 ![Captura del juego](images/screenshot.png)
-```
 
 ## Licencia
 
