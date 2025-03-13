@@ -23,21 +23,15 @@ to execute the game, please run the following command:
 python connect4.py <difficulty>
 ```
 
-```markdown
 where `<difficulty>` it can be the any of this setting:
-```
 
-```markdown
 | Level   | Command  |
 |---------|----------|
 | Easy    |  `facil` |
 | Medium  | `medio`  |
 | Hard    | `dificil`|
-```
 
-```markdown
 example:
-```
 
 ```bash
 python connect4.py medio
