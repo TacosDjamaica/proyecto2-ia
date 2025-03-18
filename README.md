@@ -6,7 +6,7 @@ This is a connect 4 game where you play against an AI cpu that uses mini-max
 
 ## Instalation
 
-to install the necessary dependencies, please run:
+to install the necessary dependencies, run:
 
 ```bash
 pip3 install pygame
@@ -17,13 +17,13 @@ pip3 install numpy
 
 ## Use
 
-to execute the game, please run the following command:
+to execute the game, run the following command:
 
 ```bash
 python connect4.py <difficulty>
 ```
 
-where `<difficulty>` it can be the any of this setting:
+where `<difficulty>` can be the any of this settings:
 
 | Level   | Command  |
 |---------|----------|
