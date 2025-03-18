@@ -39,7 +39,7 @@ python connect4.py medio
 
 ---
 
-## Características
+## Characteristics
 
 - Implements the algorithm **MiniMax** for the cpu AI.  
 - Supports different settings of difficulty.  
@@ -47,7 +47,7 @@ python connect4.py medio
 
 ---
 
-## Capturas de Pantalla
+## How it looks
 
 ![Captura del juego](images/screenshot.png)
 
